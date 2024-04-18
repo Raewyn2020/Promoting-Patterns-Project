@@ -1,0 +1,1404 @@
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    To solve this task, we will use a combination of basic arithmetic operations (+, -, *, /) on the given numbers to obtain the result 24. We will follow a systematic approach to explore all possible combinations. Here are the detailed steps:
+
+1. First, identify the numbers given. In this case, the numbers are 5, 10, 5, 2.
+
+2. Start by examining possible combinations of two numbers and the results of basic arithmetic operations on them. 
+
+3. First operation: Subtract the first 5 from the 10. This results in the numbers (5, 5, 2). 
+
+4. Second operation: Multiply the remaining 5 by the 2. This results in the numbers (5, 10). 
+
+5. Third operation: Multiply the remaining 5 by the 10. This results in the number 50.
+
+6. However, 50 is not equal to 24, so this path does not lead to a solution. We need to retrace and explore another path.
+
+7. First operation: Multiply the first 5 by the 2. This results in the numbers (10, 10, 5).
+
+8. Second operation: Subtract the remaining 5 from one of the 10s. This results in the numbers (10, 5).
+
+9. Third operation: Multiply the remaining 10 by the 5. This results in the number 50.
+
+10. Again, 50 is not equal to 24, so this path does not lead to a solution. We need to retrace and explore another path.
+
+11. First operation: Multiply the first 5 by the 2. This results in the numbers (10, 10, 5).
+
+12. Second operation: Subtract the remaining 5 from one of the 10s. This results in the numbers (10, 5).
+
+13. Third operation: Multiply the remaining 10 by the 5. This results
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Start with the given numbers: (14, 8, 8, 2)
+2. Begin by examining possible operations between pairs of numbers.
+3. First operation: Subtract 14 - 8 = 6. The remaining numbers are (6, 8, 2).
+4. Second operation: Subtract 8 - 6 = 2. The remaining numbers are (2, 2).
+5. Third operation: Multiply 2 * 2 = 4. There are no more numbers left.
+6. The result from the operations is 4, which is not equal to 24, so this path does not lead to a solution. Retrace to find another viable path.
+7. Retrace to the first operation. Try a different operation: 14 + 8 = 22. The remaining numbers are (22, 8, 2).
+8. Second operation: Subtract 22 - 8 = 14. The remaining numbers are (14, 2).
+9. Third operation: Multiply 14 * 2 = 28. There are no more numbers left.
+10. The result from these operations is 28, which is not equal to 24, so this path does not lead to a solution. Retrace to find another viable path.
+11. Retrace to the second operation. Try a different operation: 22 + 8 = 30. The remaining numbers are (30, 2).
+12. Third operation: Subtract 30 - 2 = 28. There are no more numbers left.
+13. The result from these operations is 28, which is not equal to 24, so this path does not lead to a solution. Retrace to find another viable path.
+14. Retrace to the first operation. Try a different operation: 14 * 8 = 112. The remaining numbers are (112, 8, 2).
+15. Second operation: Divide 112
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+If a cube has a side length of 3 cm, what is the volume of the cube?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+If a cube has a side length of 3 cm, what is the volume of the cube?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+
+If a cube has a side length of 3 cm, what is the volume of the cube?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the Problem
+- First, we need to understand what the problem is asking. 
+- The problem is asking us to calculate the volume of a cube. 
+- The cube has a side length of 3 cm. 
+
+2. Understand the Concept of Volume of a Cube
+- The volume of a cube is calculated by cubing the length of one of its sides.
+- This is because all sides of a cube are equal in length. 
+- The formula for the volume of a cube is V = s^3, where V is the volume and s is the side length.
+
+3. Apply the Formula
+- We know that the side length of the cube is 3 cm.
+- We can substitute this into the formula to find the volume.
+- So, V = 3^3 = 27 cm^3.
+
+4. Verify the Result
+- We can verify the result by checking if the calculation was done correctly.
+- 3 cubed is indeed 27, so the calculation is correct.
+
+5. Return the Result
+- The volume of the cube with a side length of 3 cm is 27 cm^3.
+
+6. Summarize the Process
+- To find the volume of a cube, we cube the length of one of its sides.
+- In this case, the side length was 3 cm, so the volume is 27 cm^3.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+
+If a cube has a side length of 3 cm, what is the volume of the cube?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. First, understand the problem:
+    1.1. Identify the given information: The side length of the cube is 3 cm.
+    1.2. Identify what needs to be found: The volume of the cube.
+    1.3. Understand the relationship between the side length of a cube and its volume: The volume of a cube is calculated by cubing the length of one side (V = s^3).
+
+2. Second, set up the equation to solve the problem:
+    2.1. Write down the formula for the volume of a cube: V = s^3.
+    2.2. Substitute the given side length into the formula: V = 3^3.
+
+3. Third, solve the equation:
+    3.1. Calculate the cube of 3: 3^3 = 27.
+    3.2. Substitute the result back into the equation: V = 27.
+    3.3. State the result: The volume of the cube is 27 cubic centimeters.
+
+4. Fourth, check the solution:
+    4.1. Check if the solution makes sense: A cube with a side length of 3 cm should have a volume greater than 3 cubic cm but less than 64 cubic cm (the volume of a cube with a side length of 4 cm), so 27 cubic cm seems reasonable.
+    4.2. Check the solution by substituting it back into the original problem: If a cube has a volume of 27 cubic cm, then its side length should be the cube root of 27, which is 3 cm. This matches the given information, so the solution is correct.
+
+5. Fifth, summarize the solution:
+    5.1. The volume of a cube with a side length of 3 cm is 27 cubic cm.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    Here are the steps to solve the objective:
+
+1. Start with the numbers 5, 10, 5, 2.
+2. Check the possible arithmetic operations between each pair of numbers. 
+   - (5,10): 5 + 10 = 15, 10 - 5 = 5, 5 * 10 = 50, 10 / 5 = 2
+   - (5,5): 5 + 5 = 10, 5 - 5 = 0, 5 * 5 = 25, 5 / 5 = 1
+   - (5,2): 5 + 2 = 7, 5 - 2 = 3, 5 * 2 = 10, 5 / 2 = 2.5
+   - (10,5): 10 + 5 = 15, 10 - 5 = 5, 10 * 5 = 50, 10 / 5 = 2
+   - (10,2): 10 + 2 = 12, 10 - 2 = 8, 10 * 2 = 20, 10 / 2 = 5
+   - (5,2): 5 + 2 = 7, 5 - 2 = 3, 5 * 2 = 10, 5 / 2 = 2.5
+3. Notice that multiplying 5 and 5 results in 25, which is close to 24. So, let's keep this operation and continue with the numbers (25, 10, 2).
+4. Check the possible arithmetic operations between each pair of numbers.
+   - (25,10): 25 + 10 = 35, 25 - 10 = 15, 25 * 10 = 250, 25 / 10 = 
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+
+Use numbers and basic arithmetic operations (+ - * /) to obtain 24. When
+considering the next steps, do not choose operations that will result in a
+negative or fractional number. In order to help with the calculations, the
+numbers in the parenthesis represent the numbers that are left after the
+operations and they are in descending order.
+Another thing we do is when there are only two numbers left in the parenthesis, we
+check whether we can arrive at 24 only by using basic arithmetic operations
+(+ - * /). Some examples regarding this idea:
+(21 2) no
+since 21 + 2 = 23, 21 - 2 = 19, 21 * 2 = 42, 21 / 2 = 10.5, none of which is equal
+to 24.
+(30 6) 30 - 6 = 24 yes
+(8 3) 8 * 3 = 24 yes
+(12 8) no
+(48 2) 48 / 2 = 24 yes
+Most importantly, do not give up, all the numbers that will be given has indeed a
+solution.
+
+14 8 8 2
+
+OBJECTIVE
+#########
+5 10 5 2
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    Here is a decomposition of the task into explicit subtasks:
+
+1. Identify the numbers given: In the first case, the numbers are 14, 8, 8, 2. In the second case, the numbers are 5, 10, 5, 2.
+
+2. Start by trying different combinations of these numbers using basic arithmetic operations. 
+
+3. For the first case:
+
+    3.1. Start with the largest numbers. Try adding them: 14 + 8 = 22. This leaves us with the numbers (22, 8, 2).
+    
+    3.2. Check if we can get 24 with the remaining numbers. We can't get 24 by adding, subtracting, multiplying or dividing 22, 8 and 2.
+    
+    3.3. Try subtracting the next largest number from the sum: 22 - 8 = 14. This leaves us with the numbers (14, 2).
+    
+    3.4. Check if we can get 24 with the remaining numbers. We can't get 24 by adding, subtracting, multiplying or dividing 14 and 2.
+    
+    3.5. Retrace steps and try a different operation. Multiply the largest numbers: 14 * 8 = 112. This leaves us with the numbers (112, 8, 2).
+    
+    3.6. Check if we can get 24 with the remaining numbers. We can't get 24 by adding, subtracting, multiplying or dividing 112, 8 and 2.
+    
+    3.7. Retrace steps and try a different operation. Divide the largest number by one of the other numbers: 14 / 2 = 7. This leaves us with the numbers (7, 8, 8).
+    
+    3.8. Check if we can get 24 with the remaining
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+If John is taller than Jake, and Jake is taller than Paul, who is the shortest?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+If John is taller than Jake, and Jake is taller than Paul, who is the shortest?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+If John is taller than Jake, and Jake is taller than Paul, who is the shortest?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the task: The task is to determine who is the shortest among John, Jake, and Paul based on the given information.
+
+2. Analyze the given information: The information provided is that John is taller than Jake, and Jake is taller than Paul.
+
+3. Break down the given information: 
+   1.1. John is taller than Jake: This means Jake is shorter than John.
+   1.2. Jake is taller than Paul: This means Paul is shorter than Jake.
+
+4. Compare the information from the subtasks:
+   2.1. From subtask 3.1, Jake is shorter than John.
+   2.2. From subtask 3.2, Paul is shorter than Jake.
+
+5. Draw a conclusion from the comparison:
+   3.1. If Jake is shorter than John, and Paul is shorter than Jake, then Paul is the shortest.
+
+6. Verify the conclusion: 
+   4.1. Recheck the given information: John is taller than Jake, and Jake is taller than Paul.
+   4.2. Confirm that the conclusion aligns with the given information: If John is taller than Jake, and Jake is taller than Paul, then Paul must be the shortest.
+
+7. Provide the solution: Based on the given information and the conclusion drawn, Paul is the shortest.
+
+8. Summarize the solution: After analyzing the information that John is taller than Jake, and Jake is taller than Paul, we can conclude that Paul is the shortest.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+If John is taller than Jake, and Jake is taller than Paul, who is the shortest?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    ########## DECOMPOSITION OF TASK
+
+1. Interpret the problem statement
+2. Identify the given facts
+3. Establish the relationships between the individuals based on the given facts
+4. Determine who is the shortest based on these relationships
+5. Summarize the result
+
+########## SOLUTION
+
+1. Interpret the problem statement
+    - The problem is asking us to determine who is the shortest among John, Jake, and Paul based on the given facts.
+
+2. Identify the given facts
+    - The facts given are: "John is taller than Jake" and "Jake is taller than Paul".
+
+3. Establish the relationships between the individuals based on the given facts
+    - From the first fact, we know that John is taller than Jake.
+    - From the second fact, we know that Jake is taller than Paul.
+    - Therefore, we can infer that John is taller than both Jake and Paul, and Jake is taller than Paul.
+
+4. Determine who is the shortest based on these relationships
+    - Since John is taller than both Jake and Paul, John is not the shortest.
+    - Since Jake is taller than Paul, Jake is not the shortest.
+    - Therefore, by elimination, Paul is the shortest.
+
+5. Summarize the result
+    - Based on the given facts and the relationships established, Paul is the shortest among John, Jake, and Paul.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Find the area of a triangle with a base of 10 cm and a height of 5 cm.
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Find the area of a triangle with a base of 10 cm and a height of 5 cm.
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Find the area of a triangle with a base of 10 cm and a height of 5 cm.
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+Find the area of a triangle with a base of 10 cm and a height of 5 cm.
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the task: The task is to calculate the area of a triangle. The formula to calculate the area of a triangle is 1/2 * base * height. In this case, the base of the triangle is 10 cm and the height is 5 cm.
+
+2. Identify the given values: We are given the base and the height of the triangle. The base is 10 cm and the height is 5 cm.
+
+3. Recall the formula for the area of a triangle: The formula to find the area of a triangle is (1/2) * base * height.
+
+3.1. Identify the components of the formula: The formula consists of three components - the base of the triangle, the height of the triangle, and a constant factor of 1/2.
+
+3.2. Understand the role of each component in the formula: The base and the height are the dimensions of the triangle, and the factor of 1/2 accounts for the fact that a triangle is half of a rectangle.
+
+4. Apply the formula: Substitute the given values into the formula.
+
+4.1. Substitute the value of the base into the formula: The base is 10 cm, so replace 'base' in the formula with 10.
+
+4.2. Substitute the value of the height into the formula: The height is 5 cm, so replace 'height' in the formula with 5.
+
+5. Perform the calculation: Now that all the values in the formula have been replaced with their given values, perform the calculation.
+
+5.1. Multiply the base and the height: 10 cm * 5 cm = 50 cm^2.
+
+5.2. Multiply the result by 1/2: (1/2) * 50 cm^2 = 25 cm^2.
+
+6. Verify the result: The area of the triangle should be a positive value. In this case, the result is 25 cm^2
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+Find the area of a triangle with a base of 10 cm and a height of 5 cm.
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understanding the problem
+    1.1. Recognize the problem as a simple geometry problem.
+    1.2. Understand that the problem is asking for the area of a triangle.
+    1.3. Identify that the given dimensions of the triangle are a base of 10 cm and a height of 5 cm.
+
+2. Identifying the formula to solve the problem
+    2.1. Recall the formula for calculating the area of a triangle.
+    2.2. Confirm that the formula is (1/2) * base * height.
+
+3. Applying the formula to the given problem
+    3.1. Substitute the given values into the formula.
+    3.2. Insert 10 cm as the base into the formula.
+    3.3. Insert 5 cm as the height into the formula.
+
+4. Calculating the area
+    4.1. Perform the multiplication operation in the formula, i.e., multiply the base (10 cm) by the height (5 cm).
+    4.2. Multiply the result by 1/2 as per the formula.
+
+5. Finalizing the solution
+    5.1. Ensure the unit of the area is in square centimeters (cm^2) as the measurements given are in centimeters.
+    5.2. Write down the final answer as the area of the triangle.
+
+6. Reviewing the solution
+    6.1. Check if the calculations were done correctly.
+    6.2. Verify if the final answer is reasonable for the given dimensions of the triangle.
+
+7. Summarizing the solution
+    7.1. Summarize the steps taken to solve the problem.
+    7.2. State the final answer, i.e., the area of the triangle with a base of 10 cm and a height of 5 cm.
+
+Solution for the subtasks:
+The formula for
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Passage:
+"In medieval Europe, castles were not only military fortresses but also centers of administration and symbols of power. Positioned strategically, these imposing structures hosted important events and housed nobility, asserting dominance over the regions they overlooked."
+
+Question:
+What roles did castles play in medieval Europe apart from military defense?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Passage:
+"In medieval Europe, castles were not only military fortresses but also centers of administration and symbols of power. Positioned strategically, these imposing structures hosted important events and housed nobility, asserting dominance over the regions they overlooked."
+
+Question:
+What roles did castles play in medieval Europe apart from military defense?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+Passage:
+"In medieval Europe, castles were not only military fortresses but also centers of administration and symbols of power. Positioned strategically, these imposing structures hosted important events and housed nobility, asserting dominance over the regions they overlooked."
+
+Question:
+What roles did castles play in medieval Europe apart from military defense?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. First operation: Read and understand the objective
+    1.1. Understand the passage provided
+    1.2. Understand the question asked
+
+2. Second operation: Identify the key elements in the passage
+    2.1. Identify the main subject of the passage, which is the role of castles in medieval Europe
+    2.2. Identify the specific roles mentioned in the passage apart from military defense
+
+3. Third operation: Extract relevant information from the passage to answer the question
+    3.1. Identify that castles served as centers of administration
+    3.2. Identify that castles were symbols of power
+    3.3. Identify that castles were strategically positioned
+    3.4. Identify that castles hosted important events
+    3.5. Identify that castles housed nobility
+    3.6. Identify that castles asserted dominance over the regions they overlooked
+
+4. Fourth operation: Formulate the answer based on the extracted information
+    4.1. Write the answer, ensuring to include all the roles identified
+    4.2. Review the answer to ensure it fully answers the question
+
+5. Fifth operation: Present the final answer
+    5.1. The roles that castles played in medieval Europe apart from military defense included serving as centers of administration, acting as symbols of power, hosting important events, housing nobility, and asserting dominance over the regions they overlooked.
+
+6. Sixth operation: Summarize the process
+    6.1. The process involved reading and understanding the passage and the question, identifying key elements in the passage, extracting relevant information to answer the question, formulating the answer, and presenting the final answer.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+Passage:
+"In medieval Europe, castles were not only military fortresses but also centers of administration and symbols of power. Positioned strategically, these imposing structures hosted important events and housed nobility, asserting dominance over the regions they overlooked."
+
+Question:
+What roles did castles play in medieval Europe apart from military defense?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. First operation: Understanding the passage content
+    1.1. Break down each sentence and understand their meaning
+        1.1.1. Understand the context of medieval Europe
+        1.1.2. Understand the concept of castles in medieval Europe
+        1.1.3. Understand the different roles of castles mentioned in the passage
+    1.2. Identify the key points in the passage
+        1.2.1. Identify the roles of castles in medieval Europe
+        1.2.2. Identify the strategic positioning of the castles
+        1.2.3. Identify the significance of castles in medieval Europe
+
+2. Second operation: Understanding the question
+    2.1. Break down the question
+        2.1.1. Understand what is being asked
+        2.1.2. Identify the specific information required from the passage
+    2.2. Identify the key points in the question
+        2.2.1. Understand the term "roles"
+        2.2.2. Understand the term "apart from military defense"
+
+3. Third operation: Matching the question with the passage
+    3.1. Identify the information in the passage that answers the question
+        3.1.1. Identify the roles of castles apart from military defense
+        3.1.2. Match the identified roles with the question
+    3.2. Formulate the answer based on the matched information
+        3.2.1. Write down the roles of castles apart from military defense
+        3.2.2. Ensure the answer is in line with the question
+
+4. Fourth operation: Finalizing the answer
+    4.1. Review the answer
+        4.1.1. Check if the answer is coherent and complete
+        4
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+If a cube has a side length of 3 cm, what is the volume of the cube?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+If a cube has a side length of 3 cm, what is the volume of the cube?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+If a cube has a side length of 3 cm, what is the volume of the cube?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the task: The task is to calculate the volume of a cube with a given side length of 3 cm. The formula to calculate the volume of a cube is side length cubed (s^3).
+
+2. Identify the given information: The side length of the cube is given as 3 cm.
+
+3. Apply the formula: Substitute the given side length into the formula. 
+
+    3.1. Write down the formula: V = s^3
+
+    3.2. Substitute the given side length (3 cm) into the formula: V = 3^3
+
+4. Perform the calculation: 
+
+    4.1. Understand the operation: The operation is to cube the side length, which means multiplying the side length by itself twice. 
+
+    4.2. Perform the operation: 3 * 3 * 3 = 27
+
+5. Interpret the result: The result is the volume of the cube.
+
+    5.1. Understand the unit: The unit for volume is cubic centimeters (cm^3).
+
+    5.2. Apply the unit to the result: The volume of the cube is 27 cm^3.
+
+6. Check the result: 
+
+    6.1. Understand the meaning of the result: The volume of the cube is the amount of space it occupies, which is 27 cm^3.
+
+    6.2. Check the reasonableness of the result: The result is reasonable because it is positive and less than the volume of a larger cube with a side length of 4 cm (64 cm^3).
+
+7. Summarize the result: The volume of a cube with a side length of 3 cm is 27 cm^3.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+If a cube has a side length of 3 cm, what is the volume of the cube?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the problem
+    1.1 Recognize that the problem is asking for the volume of a cube
+    1.2 Understand that the volume of a cube is calculated by cubing the length of one of its sides
+    1.3 Note that the length of one side of the cube is given as 3 cm
+
+2. Plan how to solve the problem
+    2.1 Recall the formula for the volume of a cube: Volume = side^3
+    2.2 Plan to substitute the given side length into the formula
+
+3. Execute the plan
+    3.1 Take the given side length, which is 3 cm
+    3.2 Substitute the side length into the formula: Volume = 3^3
+
+4. Calculate the volume
+    4.1 Perform the cube operation: 3^3 = 27
+    4.2 Understand that the result is in cubic centimeters because the side length was given in centimeters
+
+5. Verify the result
+    5.1 Check that the result is reasonable: A cube with a side length of 3 cm should have a volume of 27 cm^3 because 3^3 = 27
+    5.2 Confirm that the units are correct: The volume should be in cubic centimeters because the side length was given in centimeters
+
+6. State the final answer
+    6.1 The volume of the cube is 27 cubic centimeters
+
+7. Summarize the solution
+    7.1 The volume of a cube with a side length of 3 cm was found by cubing the side length, resulting in a volume of 27 cm^3.
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. First, understand the objective, which is to determine the safety of going outside during a thunderstorm.
+
+2. To understand this, we need to research the dangers associated with thunderstorms. 
+
+2.1. Begin with a general search on thunderstorms. 
+
+2.1.1. Look for reliable sources that explain what a thunderstorm is.
+
+2.1.2. Take notes on the key points, especially those that relate directly to safety issues.
+
+2.2. Research the specific dangers associated with thunderstorms.
+
+2.2.1. Look for reliable sources that detail the risks involved in being outside during a thunderstorm.
+
+2.2.2. Take notes on the key points, such as lightning strikes, heavy rain, strong winds, hail, and flash floods.
+
+3. After gathering the necessary information, analyze it to answer the objective.
+
+3.1. Review the information gathered about the dangers of thunderstorms.
+
+3.1.1. Consider how these dangers could impact someone who is outside during a thunderstorm.
+
+3.1.2. Evaluate the likelihood of these dangers occurring.
+
+3.2. Based on this analysis, draw a conclusion about the safety of going outside during a thunderstorm.
+
+4. With the conclusion drawn, formulate a response to the objective.
+
+4.1. Write a clear and concise statement that answers the question, "Is it safe to go outside during a thunderstorm?"
+
+4.2. Be sure to include the reasons for this conclusion, based on the information gathered and analyzed.
+
+5. Finally, review the response to ensure it accurately answers the objective and is supported by the research.
+
+5.1. Check the response for clarity and conciseness.
+
+5.2. Ensure the response is supported by the research conducted.
+
+5.3. Make any necessary revisions to the response.
+
+6. The definitive end result, based on this process, is that it is not safe to go outside during a thunderstorm due to the
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Define the objective: Determine if it is safe to go outside during a thunderstorm.
+2. Break down the objective into subtasks:
+
+    2.1. Understand what a thunderstorm is.
+    
+    2.2. Research the potential dangers of a thunderstorm.
+    
+    2.3. Evaluate the risks of being outside during a thunderstorm.
+    
+    2.4. Compare the risks to the necessity or urgency of going outside.
+    
+    2.5. Make a conclusion based on the evaluation.
+
+3. Begin the third subtree exploration - Evaluate the risks of being outside during a thunderstorm:
+
+    3.1. Identify the potential risks of being outside during a thunderstorm.
+    
+    3.2. Research each identified risk in detail.
+    
+    3.3. Evaluate the likelihood of each risk.
+    
+    3.4. Consider the potential consequences of each risk.
+    
+    3.5. Summarize the overall risk of being outside during a thunderstorm.
+
+4. Solutions for the subtasks:
+
+    4.1. A thunderstorm is a storm characterized by the presence of lightning and its acoustic effect on the Earth's atmosphere, known as thunder.
+
+    4.2. Potential dangers of a thunderstorm include lightning strikes, heavy rain leading to flooding, strong winds, and hail. 
+
+    4.3. The risks of being outside during a thunderstorm are high. You can be struck by lightning, swept away by floodwaters, or injured by flying debris.
+
+    4.4. Unless it is absolutely necessary or an emergency, it is not worth the risk to go outside during a thunderstorm.
+
+5. Conclusion: Based on the evaluation, it is not safe to go outside during a thunderstorm due to the high risk of lightning strikes, flooding, and other dangers.
+
+6. Summary: A thunderstorm is a dangerous weather event with potential risks such as lightning strikes
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Start with the first operation: Understanding the question
+    1.1. Clearly define the objective: Determine if it is safe to go outside during a thunderstorm.
+    1.2. Identify the key elements of the question: "safe", "go outside", "during a thunderstorm".
+
+2. Proceed to the second operation: Gathering necessary information
+    2.1. Research about thunderstorms: what they are, how they occur, and their potential dangers.
+    2.2. Research about safety measures during thunderstorms: what precautions should be taken, what activities should be avoided.
+    2.3. Research about the effects of being outside during a thunderstorm: potential risks and dangers.
+
+3. Proceed to the third operation: Analyzing and evaluating the information
+    3.1. Analyze the data about thunderstorms: understand the dangers associated with them like lightning strikes, heavy rain, strong winds, and flying debris.
+    3.2. Evaluate the safety measures during thunderstorms: staying indoors, avoiding water, and staying away from tall objects are some recommended safety measures.
+    3.3. Assess the risks of being outside during a thunderstorm: being outside increases the risk of being struck by lightning, being hit by flying debris, or being caught in flash floods.
+
+4. Proceed to the fourth operation: Drawing conclusions based on the analysis
+    4.1. Infer from the analyzed data: Going outside during a thunderstorm is generally unsafe due to the potential dangers associated with thunderstorms.
+    4.2. Validate the conclusion: Cross-check the conclusion with multiple reliable sources to ensure its accuracy.
+
+5. Proceed to the fifth operation: Communicating the conclusion
+    5.1. Formulate a clear and concise answer to the objective: It is not safe to go outside during a thunderstorm.
+    5.2. Provide a brief explanation: The risks of being struck by lightning,
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Start by understanding the question:
+   1.1. Define the objective: Determine if it's safe to go outside during a thunderstorm.
+
+2. Gather information about thunderstorms:
+   2.1. Research what a thunderstorm is.
+   2.2. Understand the elements of a thunderstorm: lightning, thunder, heavy rain, strong winds, etc.
+   2.3. Research the dangers associated with thunderstorms.
+
+3. Assess the risks associated with thunderstorms:
+   3.1. Evaluate the risk of being struck by lightning.
+   3.2. Consider the risk of being caught in heavy rain and strong winds.
+   3.3. Consider the risk of falling trees or other objects due to strong winds.
+   3.4. Research the statistics of injuries or deaths caused by thunderstorms.
+
+4. Consider safety measures during a thunderstorm:
+   4.1. Research recommended safety measures during a thunderstorm.
+   4.2. Evaluate the effectiveness of these measures.
+   4.3. Consider if these measures can be effectively implemented when outside.
+
+5. Make a conclusion based on the gathered information:
+   5.1. Analyze the information about the dangers of thunderstorms.
+   5.2. Weigh the risks against the effectiveness of safety measures.
+   5.3. Make a conclusion about the safety of going outside during a thunderstorm.
+
+6. Write a summary of the conclusion:
+   6.1. Summarize the risks associated with thunderstorms.
+   6.2. Summarize the safety measures that can be taken.
+   6.3. State the conclusion about the safety of going outside during a thunderstorm.
+
+Definitive end result: Based on the potential risks of lightning strikes, heavy rain, strong winds, and the difficulty of effectively implementing safety measures when outside, it is generally not safe to go outside during a thunderstorm
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt : 
+        Accomplish the task below by decomposing it as many very explicit subtasks as possible, be very explicit and thorough denoted by 
+        a search process, highlighted by markers ‘1’,..., ‘3’ as “first operations” guiding subtree exploration for the OBJECTIVE, 
+        focus on the third subtree exploration. Produce prospective search steps (e.g., the subtree exploration ‘5. 11 + 1’) 
+        and evaluates potential subsequent steps to either progress
+        towards a solution or retrace to another viable subtree then be very thorough 
+        and think atomically then provide solutions for those subtasks, 
+        then return the definitive end result and then summarize it
+
+
+        ########## OBJECTIVE
+        
+Is it safe to go outside during a thunderstorm?
+
+        ###################
+        
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Understand the Objective:
+    1.1. Interpret the question: Understand what is being asked- Is it safe to be outside during a thunderstorm?
+    1.2. Define the key terms: Understand what is meant by "safe" and "thunderstorm".
+
+2. Gather Information:
+    2.1. Research about thunderstorms: Understand what they are, what causes them, and their potential dangers.
+    2.2. Research about safety measures during a thunderstorm: Find out what are the recommended safety measures during a thunderstorm.
+
+3. Analyze the Information:
+    3.1. Analyze the dangers of thunderstorms: Understand the potential risks associated with being outside during a thunderstorm.
+    3.2. Analyze the safety measures: Understand how these measures can protect an individual during a thunderstorm.
+    
+4. Evaluate the Information:
+    4.1. Evaluate the risks: Determine the likelihood and severity of potential dangers during a thunderstorm.
+    4.2. Evaluate the effectiveness of safety measures: Determine how effective these measures are in protecting an individual during a thunderstorm.
+
+5. Formulate a Conclusion:
+    5.1. Compare the risks and safety measures: Determine if the safety measures are sufficient to protect an individual from the potential dangers of a thunderstorm.
+    5.2. Formulate a response: Based on the comparison, determine if it is safe to be outside during a thunderstorm.
+    
+6. Review the Conclusion:
+    6.1. Review the response: Check if the response accurately answers the question.
+    6.2. Make necessary adjustments: If the response does not accurately answer the question, adjust it accordingly.
+
+7. Communicate the Conclusion:
+    7.1. Communicate the response: Clearly and concisely communicate whether it is safe to be outside during a thunderstorm.
+    7.2. Provide reasoning: Explain why it
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
+
+-----------
+Prompt :  To achieve the following goal: '
+Is it safe to go outside during a thunderstorm?
+', pessimistically value the context of the past solutions and more importantly the latest generated solution you had AS A FLOAT BETWEEN 0 AND 1
+
+                    Past solutions:
+
+
+                    1. Define the objective: Determine if it is safe to go outside during a thunderstorm.
+
+2. Break down the objective into subtasks:
+
+    2.1 Understand the nature of a thunderstorm.
+    
+    2.2 Research the potential risks of being outside during a thunderstorm.
+    
+    2.3 Identify precautions that can be taken to mitigate the risks.
+    
+    2.4 Evaluate the overall safety of being outside during a thunderstorm based on the gathered information.
+
+3. Subtree exploration for subtask 2.1:
+
+    3.1 Research what a thunderstorm is.
+    
+    3.2 Understand the elements of a thunderstorm such as lightning, thunder, heavy rains, and strong winds.
+    
+    3.3 Research how often thunderstorms occur and in what geographical regions they are most common.
+
+4. Subtree exploration for subtask 2.2:
+
+    4.1 Research the risks associated with lightning during a thunderstorm.
+    
+    4.2 Understand the risks associated with heavy rains and flooding.
+    
+    4.3 Research the potential dangers of strong winds during a thunderstorm.
+
+5. Subtree exploration for subtask 2.3:
+
+    5.1 Identify safety measures to take during a thunderstorm if you are outside.
+    
+    5.2 Understand the importance of seeking shelter.
+    
+    5.3 Research the effectiveness of these precautions in ensuring safety.
+
+6. Subtree exploration for subtask 2.4:
+
+    6.1 Evaluate the information gathered from subtasks 2.1, 2.2, and 2.3.
+    
+    6.2 Determine whether it is safe to be outside during a thunderstorm based on the evaluated information.
+
+7. Solutions for subtasks:
+
+    7.1 A thunderstorm is a storm characterized by the presence of lightning and its acoustic effect on the Earth's atmosphere known as thunder.
+    
+
+       
+                    If the solutions is not making fast progress in achieving the goal, give it a lower score.
+                    Evaluate all solutions AS A FLOAT BETWEEN 0 and 1:
+,  DO NOT RETURN ANYTHING ELSE
+                
