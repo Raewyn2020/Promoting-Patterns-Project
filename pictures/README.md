@@ -1,6 +1,6 @@
 # User Trust Score Visualization
 
-This folder contains data visualizations and scripts used for analyzing user trust in AI-generated responses across various thought models. The analysis includes various graphical tools to showcase insights into the perceived trustworthiness of different prompting methods.
+This directory contains data visualizations and scripts used for analyzing user trust in AI-generated responses across various thought models. The analysis includes various graphical tools to showcase insights into the perceived trustworthiness of different prompting methods.
 
 ## Visualizations Included
 
