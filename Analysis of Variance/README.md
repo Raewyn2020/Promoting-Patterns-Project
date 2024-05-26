@@ -1,6 +1,6 @@
 # Analysis of Variance for User Trust Scores
 
-This folder contains the Python scripts and datasets used to perform Analysis of Variance (ANOVA) and T-tests for assessing the significance of differences in user trust scores across various thought models in different tasks.
+This directory contains the Python scripts and datasets used to perform Analysis of Variance (ANOVA) and T-tests for assessing the significance of differences in user trust scores across various thought models in different tasks.
 
 ## Overview
 
