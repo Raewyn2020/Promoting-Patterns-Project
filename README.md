@@ -16,6 +16,10 @@ Contains scripts and data for conducting ANOVA tests to assess statistically sig
 ### 4. Keyword Extraction
 Includes scripts and processed datasets for extracting and analyzing keywords from user feedback, which help in understanding user trust dynamics.
 
+### 5. Data
+This directory contains all the data used and generated during the project. It includes the following:
+- `questionnaire_feedback.xlsx`: This file includes feedback data collected from the complete questionnaire. It contains user responses that can be used to understand the perceptions and trust levels of users interacting with different AI prompting methods. Please refer to the file for detailed information on data structure and contents.
+
 ## Project Setup
 
 Each directory contains a specific part of the project. Navigate to each folder to find detailed README.md files explaining the scripts, data, and usage instructions specific to that component.
