@@ -1,6 +1,6 @@
 # Keyword Extraction for User Trust Analysis
 
-This folder contains Python scripts and data files used to extract and analyze keywords from user feedback related to responses. The aim is to identify and categorize words that significantly reflect user trust or distrust in promoting patterns, providing valuable insights for improving thought models.
+This directory contains Python scripts and data files used to extract and analyze keywords from user feedback related to responses. The aim is to identify and categorize words that significantly reflect user trust or distrust in promoting patterns, providing valuable insights for improving thought models.
 
 ## Overview
 
