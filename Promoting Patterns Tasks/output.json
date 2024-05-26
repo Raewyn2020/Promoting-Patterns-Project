@@ -1,0 +1,16 @@
+[
+  {
+    "operation": "generate",
+    "thoughts": [
+      {
+        "question": "If John is taller than Jake, and Jake is taller than Paul, who is the shortest.",
+        "generated": "Paul is the shortest."
+      }
+    ]
+  },
+  {
+    "prompt_tokens": 35,
+    "completion_tokens": 5,
+    "cost": 0.00135
+  }
+]
