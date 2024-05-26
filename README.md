@@ -28,8 +28,8 @@ Each directory contains a specific part of the project. Navigate to each folder 
 To clone this repository and run the scripts, ensure you have Python installed along with necessary libraries mentioned in each component's README.
 
 ```bash
-git clone https://github.com/yourusername/TrustDynamics-Prompts.git
-cd TrustDynamics-Prompts
+git clone https://github.com/Raewyn2020/Promoting-Patterns-Project.git
+cd Promoting-Patterns-Project
 ```
 
 ## Usage
