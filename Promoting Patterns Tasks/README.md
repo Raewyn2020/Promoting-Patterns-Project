@@ -1,6 +1,6 @@
 # Setup Guide for Thought Process Frameworks
 
-This guide provides detailed instructions for setting up and using the Tree of Thought (ToT), Algorithm of Thought (AoT), and Graph of Thought (GoT) frameworks. Each framework requires a specific configuration to function correctly with the OpenAI GPT-4 model.
+This guide provides detailed instructions for setting up and using the Tree of Thought (ToT), Algorithm of Thought (AoT), and Graph of Thought (GoT) frameworks. Each framework requires a specific configuration to function correctly with the **OpenAI GPT-4** model.
 
 ## Prerequisites
 Before you begin, ensure you have:
